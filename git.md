@@ -1,4 +1,4 @@
-### Pull a remote branch to local  
+### Pull a remote branch to the local machine 
    a. Use the `-a` option to see all the local and remote branches  
 ```
 git branch -a
@@ -18,4 +18,10 @@ Switched to a new branch 'add_transform_styles'
   c. (optional) check if everything is up to date 
 ```
 git pull
+```
+
+### Update submodule  
+examples: `sphinx-doc/tutorial`
+```
+git submodule update
 ```
