@@ -15,7 +15,7 @@
 This example moves all the atoms by a certain distance
 * a. load the molecule 
 * b. extension -> TK console -> type `set sel [atomselect top all]` 
-* c. type `sel moveby {200, 0, 0}`
+* c. type `sel moveby {200 0 0}`
 * d. type `pbc box`
 * in VMD control window, click the first line, then click file -> save coordinates -> write `all` in `selected atoms`, then save the lammpstrj file. 
   
