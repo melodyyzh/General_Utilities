@@ -40,3 +40,9 @@ examples: sphinx-doc/tutorial is a submodule, and git add will not stage the sub
 #### 5. `git reset` and `git revert`
 * `git reset` unstages a file or discard commits in a private branch
 * `git revert` undo a commit to a public branch
+
+#### 6. Add SSH passphrase to an SSH agent
+When we create a SSH key, we create a public-private key pair. The SSH key has been encrypted with a passphrase, and when you perform operations that requires authentication, SSH prompt the passphrase to unlock the private key.   
+* a. start the SSH agent with `eval $(ssh-agent)`  
+* b. add the private key to it with `ssh-add`
+* c. it will ask you for your passphrase once and add the identity. 

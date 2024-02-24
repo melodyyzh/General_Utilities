@@ -21,3 +21,6 @@ The node name can be found using:
 * for greatlake: `ssh <username>@<node_name>.arc-ts.umich.edu`
 * see how many cpu is actually being used: `top/htop`
 
+#### 6. data transfer using sftp
+* get directory: `get -r <directory>`. (wrong instruction on greatlakes page)
+* upload: `put <file>`  
