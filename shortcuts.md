@@ -26,3 +26,8 @@ where `source_folder` is the existing directory/file, and `myfolder` is the alia
 
 #### a preferred way to install a package into conda environment. 
 `python3 -m pip install --no-deps . -vv`
+
+#### change multiple at the same time 
+1. select the word 
+2. cmd+D, continue until all the ones are selected
+3. start typing your new word
