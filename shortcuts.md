@@ -19,4 +19,3 @@
 #### tmux  
 1. scroll mode in tmux
 `ctrl + b + [` and `q` to quit scrolling mode 
-
