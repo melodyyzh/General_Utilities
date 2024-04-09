@@ -45,4 +45,7 @@ examples: sphinx-doc/tutorial is a submodule, and git add will not stage the sub
 When we create a SSH key, we create a public-private key pair. The SSH key has been encrypted with a passphrase, and when you perform operations that requires authentication, SSH prompt the passphrase to unlock the private key.   
 * a. start the SSH agent with `eval $(ssh-agent)`  
 * b. add the private key to it with `ssh-add`
-* c. it will ask you for your passphrase once and add the identity. 
+* c. it will ask you for your passphrase once and add the identity.
+
+#### 7. View local commits that has not been pushed yet
+`git log --branches --not --remotes`
