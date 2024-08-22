@@ -15,3 +15,6 @@ where `source_folder` is the existing directory/file, and `myfolder` is the alia
   `PATH="$HOME/miniconda/bin:$PATH`
 * step 4: create conda environment
   `conda create -n myenv python=3.9`
+
+#### replace text globally in a text file 
+Example: `sed -i 's/Si/1/g'` where `sed` is the stream editor command, `-i` flag means the edit is done in-place rather than send to an output. `s` initiates the substitution command, here we are replacing all the `Si` with `1` using the global flag `g`. 

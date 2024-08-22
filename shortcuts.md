@@ -19,3 +19,9 @@
 #### tmux  
 1. scroll mode in tmux
 `ctrl + b + [` and `q` to quit scrolling mode 
+
+#### Apple shortcuts (default)
+1. `ctrl+a` move the cursor goes to the beginning of the line; `ctrl+e` move the cursor to the end of the line. 
+2. In terminal, `cmd+shift+< or >` to toggle between tabs 
+3. In google chrome, `opt+cmd+< or >` to toggle between tabs 
+4. 
