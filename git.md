@@ -40,30 +40,38 @@ In case of the repositories forked from the original repository like the al_driv
   e. `git checkout develop` switch the branch to `develop`  
   f. `git push origin develop` adds this branch to `al_driver-myfork`  
 
-### 2. Update submodule  
+### 2. Create a local branch and push to remote 
+  > first create a local branch and check it out: `git checkout -b <branch-name>`
+  > then push the branch to remote: `git push --set-upstream origin <branch-name>` 
+
+### 3. Update submodule  
 examples: sphinx-doc/tutorial is a submodule, and git add will not stage the submodule. Use:
 
 `git submodule update`
 
-### 3. list git configuration 
+### 4. list git configuration 
 `git config --list`
 
-### 4. set up remote origin (double check when is it needed)
+### 5. set up remote origin (double check when is it needed)
 `git remote set-url origin git@github.com:glotzerlab-hoomd-blue.git`
 
-### 5. `git reset` and `git revert`
+### 6. `git reset` and `git revert`
 * `git reset` unstages a file or discard commits in a private branch. 
   * To delete the most recent commit but keep the work you've done, execute: 
   `git reset --soft HEAD~1`
   * the following command will destroy the work you've done: 
   `git reset --hard HEAD~1`
 * `git revert` undo a commit to a public branch
+* `git reset HEAD~ ` undo a local commit
 
-### 6. Add SSH passphrase to an SSH agent
+### 7. Add SSH passphrase to an SSH agent
 When we create a SSH key, we create a public-private key pair. The SSH key has been encrypted with a passphrase, and when you perform operations that requires authentication, SSH prompt the passphrase to unlock the private key.   
 * a. start the SSH agent with `eval $(ssh-agent)`  
 * b. add the private key to it with `ssh-add`
 * c. it will ask you for your passphrase once and add the identity.
 
-### 7. View local commits that has not been pushed yet
+### 8. View local commits that has not been pushed yet
 `git log --branches --not --remotes`
+
+### 9. add all the unstaged deleted files at once
+`git add -u`

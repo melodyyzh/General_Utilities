@@ -18,3 +18,7 @@ where `source_folder` is the existing directory/file, and `myfolder` is the alia
 
 #### replace text globally in a text file 
 Example: `sed -i 's/Si/1/g'` where `sed` is the stream editor command, `-i` flag means the edit is done in-place rather than send to an output. `s` initiates the substitution command, here we are replacing all the `Si` with `1` using the global flag `g`. 
+
+#### tar and untar a file  
+* `tar -czvf compressed_file.tar.gz your_text_file.txt` to tar a file 
+* `tar -xzvf compressed_file.tar.gz` to untar a file 
