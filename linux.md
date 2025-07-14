@@ -16,6 +16,7 @@ where `source_folder` is the existing directory/file, and `myfolder` is the alia
 * step 4: source the `.bashrc` or `.bash_profile` file
 * step 5: create conda environment
   `conda create -n myenv python=3.9`
+* step 6: `conda init` then `conda activate <env name>`. If still receiving error, try `echo 'source ~/miniconda/etc/profile.d/conda.sh' >> ~/.bashrc` then `source ~/.bashrc`.
 
 #### replace text globally in a text file 
 Example: `sed -i 's/Si/1/g'` where `sed` is the stream editor command, `-i` flag means the edit is done in-place rather than send to an output. `s` initiates the substitution command, here we are replacing all the `Si` with `1` using the global flag `g`. 
