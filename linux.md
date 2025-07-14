@@ -11,9 +11,10 @@ where `source_folder` is the existing directory/file, and `myfolder` is the alia
   `wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh`
 * step 2: "specify the install directory within your home directory, rather in the default system-wide installation (which you won’t have permissions to do)".   
   `bash miniconda.sh -b -p $HOME/miniconda export`
-* step 3: add this directory to your path  
-  `PATH="$HOME/miniconda/bin:$PATH`
-* step 4: create conda environment
+* step 3: add this directory to your path (check `.bashrc` or `.bash_profile`) 
+  `PATH="$HOME/miniconda/bin:$PATH` or append `:$HOME/miniconda/bin` to the existing path.
+* step 4: source the `.bashrc` or `.bash_profile` file
+* step 5: create conda environment
   `conda create -n myenv python=3.9`
 
 #### replace text globally in a text file 
