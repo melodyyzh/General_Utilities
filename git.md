@@ -26,9 +26,9 @@ Switched to a new branch 'add_transform_styles'
   c. (optional) check if everything is up to date   
 `git pull`
 
-In case of the repositories forked from the original repository like the al_driver repo in the Lindsey Lab, the operation is different. Here, we have the `LL/al_driver-LLfork` on github, the forked repo `al_driver-myfork` on github, and the local clone `al_driver-myfork`. We create a new branch called `develop` in the `LL/al_driver-LLfork`, and next we need to make sure that we have access to the `develop` branch in myfork and local clone. 
-  a. `git remote add al_driver-LLfork git@github.com:LindseyLab-umich/al_driver-LLfork.git` 
-  b. `git remote -v` will show the following message: 
+In case of the repositories forked from the original repository like the al_driver repo in the Lindsey Lab, the operation is different. Here, we have the `LL/al_driver-LLfork` on github, the forked repo `al_driver-myfork` on github, and the local clone `al_driver-myfork`. We create a new branch called `develop` in the `LL/al_driver-LLfork`, and next we need to make sure that we have access to the `develop` branch in myfork and local clone.  
+  a. `git remote add al_driver-LLfork git@github.com:LindseyLab-umich/al_driver-LLfork.git`  
+  b. `git remote -v` will show the following message:  
   ```
   al_driver-LLfork	git@github.com:LindseyLab-umich/al_driver-LLfork.git (fetch)
   al_driver-LLfork	git@github.com:LindseyLab-umich/al_driver-LLfork.git (push)
