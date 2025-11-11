@@ -16,13 +16,14 @@ remotes/origin/main
   > 2. commit hash it points to
   > 3. upstream branch  
 
-  b. the `add_transform_style` branch is available remotely but not locally. We then want to checkout this branch
+  b. the `add_transform_style` branch is available remotely but not locally. We then want to check out this branch
 ```
 git checkout add_transform_style
 example output:
 branch 'add_transform_styles' set up to track 'origin/add_transform_styles'.
 Switched to a new branch 'add_transform_styles'
 ```
+alternatively, do `git checkout -b add_transform_style origin/add_transform_style`  
   c. (optional) check if everything is up to date   
 `git pull`
 
